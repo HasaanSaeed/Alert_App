@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.5
   bulleted_list: ^0.0.1+0.1a
   get: ^4.6.5
+  # animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:

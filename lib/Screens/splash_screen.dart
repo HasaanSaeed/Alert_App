@@ -9,7 +9,6 @@ class SplashSreen extends StatefulWidget {
 }
 
 class _SplashSreenState extends State<SplashSreen> {
-  List<Color> colors = [const Color(0xFFFB9245), const Color(0xFFF54E6B)];
   SplashServices splashSreen = SplashServices();
 
   @override
