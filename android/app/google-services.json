@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "471536953814",
+    "project_id": "alertsapp-aa08f",
+    "storage_bucket": "alertsapp-aa08f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471536953814:android:bab0fa0bca820574fc9c77",
+        "android_client_info": {
+          "package_name": "com.cyborgsolutions.alertsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471536953814-df2tsr0ptv9ott28ualgcg8veckj49fe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0z_Xhtsne4RaJmIF39Aj5H8GAJ98hYVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471536953814-df2tsr0ptv9ott28ualgcg8veckj49fe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

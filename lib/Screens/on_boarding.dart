@@ -1,8 +1,7 @@
-import 'package:alertsapp/Screens/home_screen.dart';
+import 'package:alertsapp/Authentication/sign_in.dart';
 import 'package:alertsapp/Widgets/Custom_Button.dart';
 import 'package:bulleted_list/bulleted_list.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class OnBoarding extends StatefulWidget {
   const OnBoarding({super.key});
@@ -84,15 +83,17 @@ class _OnBoardingState extends State<OnBoarding> {
                 onPressed: () {
                   setState(
                     () {
-                      Get.offAll(
-                        const HomeScreen(),
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SignIn(),
+                        ),
                       );
                     },
                   );
                 },
                 name: 'Lets\u0027s Start',
               ),
-              
             ],
           ),
         ),
