@@ -44,10 +44,13 @@ class _SignUpState extends State<SignUp> {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-          prefixIcon: const Icon(Icons.person),
-          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-          hintText: "First Name",
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
+        prefixIcon: const Icon(Icons.person),
+        contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+        hintText: "First Name",
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
+      ),
     );
     //--------------------------------Last Name
     final lastnamefeild = TextFormField(
@@ -64,10 +67,13 @@ class _SignUpState extends State<SignUp> {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-          prefixIcon: const Icon(Icons.person),
-          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-          hintText: "Last Name",
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
+        prefixIcon: const Icon(Icons.person),
+        contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+        hintText: "Last Name",
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
+      ),
     );
     //--------------------------------Email
     final emailfeild = TextFormField(
@@ -89,10 +95,13 @@ class _SignUpState extends State<SignUp> {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-          prefixIcon: const Icon(Icons.mail),
-          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-          hintText: "E mail",
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
+        prefixIcon: const Icon(Icons.mail),
+        contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+        hintText: "E mail",
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
+      ),
     );
     //--------------------------------Password
     final passwordfeild = TextFormField(
@@ -114,10 +123,13 @@ class _SignUpState extends State<SignUp> {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-          prefixIcon: const Icon(Icons.vpn_key),
-          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-          hintText: "Password",
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
+        prefixIcon: const Icon(Icons.vpn_key),
+        contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+        hintText: "Password",
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
+      ),
     );
     //--------------------------------Confirm Password
     final confirmpassword = TextFormField(
@@ -135,16 +147,19 @@ class _SignUpState extends State<SignUp> {
       },
       textInputAction: TextInputAction.done,
       decoration: InputDecoration(
-          prefixIcon: const Icon(Icons.mail),
-          contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-          hintText: "Confirm Password",
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10))),
+        prefixIcon: const Icon(Icons.mail),
+        contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+        hintText: "Confirm Password",
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
+      ),
     );
     //--------------------------------Button
     final loginbutton = Material(
       elevation: 5,
       borderRadius: BorderRadius.circular(30),
-      color: Colors.red,
+      color: Colors.purple,
       child: MaterialButton(
         padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,
@@ -162,74 +177,77 @@ class _SignUpState extends State<SignUp> {
         ),
       ),
     );
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Center(
-        child: SingleChildScrollView(
-          child: Container(
-            color: Colors.white,
-            child: Padding(
-              padding: const EdgeInsets.all(30.0),
-              child: Form(
-                key: _formKey,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    SizedBox(
-                        height: 200,
-                        child: Image.asset(
-                          "assets/logo1.png",
-                          width: 220,
-                        )),
-                    firstnamefeild,
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    lastnamefeild,
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    emailfeild,
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    passwordfeild,
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    confirmpassword,
-                    const SizedBox(
-                      height: 30,
-                    ),
-                    loginbutton,
-                    const SizedBox(
-                      height: 12,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text('Already have an account?'),
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                builder: (_) => const SignIn(),
-                              ),
-                            );
-                          },
-                          child: const Text(
-                            " Login",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w600,
-                                color: Colors.red,
-                                fontSize: 15),
+    return GestureDetector(
+      onTap: () {
+        // Dismiss the keyboard by unfocusing the TextField
+        FocusScope.of(context).unfocus();
+      },
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: Center(
+          child: SingleChildScrollView(
+            child: Container(
+              color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: Form(
+                  key: _formKey,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      const SizedBox(
+                        height: 50,
+                      ),
+                      firstnamefeild,
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      lastnamefeild,
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      emailfeild,
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      passwordfeild,
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      confirmpassword,
+                      const SizedBox(
+                        height: 50,
+                      ),
+                      loginbutton,
+                      const SizedBox(
+                        height: 12,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text('Already have an account?'),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const SignIn(),
+                                ),
+                              );
+                            },
+                            child: const Text(
+                              " Login",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.purple,
+                                  fontSize: 15),
+                            ),
                           ),
-                        ),
-                      ],
-                    )
-                  ],
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
