@@ -1,4 +1,5 @@
-import 'package:alertsapp/Authentication/sign_in.dart';
+import 'package:alertsapp/Screens/field_list.dart';
+import 'package:alertsapp/Screens/home_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       debugShowCheckedModeBanner: false,
-      home: const SignIn(),
+      home: const FiledList(),
     );
   }
 }

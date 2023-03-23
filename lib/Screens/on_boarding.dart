@@ -1,5 +1,5 @@
 import 'package:alertsapp/Authentication/sign_in.dart';
-import 'package:alertsapp/Widgets/Custom_Button.dart';
+import 'package:alertsapp/Widgets/custom_button.dart';
 import 'package:bulleted_list/bulleted_list.dart';
 import 'package:flutter/material.dart';
 
