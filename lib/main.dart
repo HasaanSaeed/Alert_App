@@ -1,7 +1,7 @@
-import 'package:alertsapp/Screens/field_list.dart';
-import 'package:alertsapp/Screens/home_screen.dart';
+import 'package:alertsapp/Screens/on_boarding.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,10 +15,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
-      debugShowCheckedModeBanner: false,
-      home: const FiledList(),
+    return ScreenUtilInit(
+      designSize: const Size(360, 690),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) {
+        return MaterialApp(
+          theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+          debugShowCheckedModeBanner: false,
+          home: const OnBoarding(),
+        );
+      },
     );
   }
 }

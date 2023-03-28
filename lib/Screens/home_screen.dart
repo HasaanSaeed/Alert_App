@@ -1,6 +1,6 @@
-import 'package:alertsapp/Screens/field_list.dart';
 import 'package:alertsapp/Widgets/custome_row.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -27,21 +27,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontSize: 40,
                       fontWeight: FontWeight.w800),
                 ),
-                const SizedBox(
-                  height: 50,
+                SizedBox(
+                  height: 50.h,
                 ),
                 const Text(
                   'Categories',
                   style: TextStyle(fontSize: 36),
                 ),
-                const SizedBox(
-                  height: 100,
+                SizedBox(
+                  height: 100.h,
                 ),
                 CustomRow(
                   title1: 'Fiver',
                   title2: 'Upwork',
                   buttonColor: Colors.purple,
-                  
                 ),
               ],
             ),

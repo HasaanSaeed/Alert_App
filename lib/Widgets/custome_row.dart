@@ -47,7 +47,6 @@ class CustomRow extends StatelessWidget {
           ),
           onPressed: () {},
           child: Text(
-            overflow: TextOverflow.clip,
             title2,
             style: TextStyle(fontSize: 22, color: buttonColor),
           ),

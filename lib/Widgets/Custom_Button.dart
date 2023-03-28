@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable, file_names
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButton extends StatelessWidget {
   final String name;
@@ -25,7 +26,7 @@ class CustomButton extends StatelessWidget {
       onTap: onPressed,
       child: Container(
         //----------------> ?? means if height is null then assign assign 50.h else apply user entered height
-        height: height ?? 50,
+        height: height ?? 50.h,
         width: width ?? double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),

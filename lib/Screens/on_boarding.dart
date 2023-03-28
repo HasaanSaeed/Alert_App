@@ -2,6 +2,7 @@ import 'package:alertsapp/Authentication/sign_in.dart';
 import 'package:alertsapp/Widgets/custom_button.dart';
 import 'package:bulleted_list/bulleted_list.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnBoarding extends StatefulWidget {
   const OnBoarding({super.key});
@@ -84,7 +85,7 @@ class _OnBoardingState extends State<OnBoarding> {
                   height: 100,
                 ),
                 CustomButton(
-                  width: 330,
+                  width: 330.w,
                   onPressed: () {
                     setState(
                       () {

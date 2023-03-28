@@ -1,5 +1,6 @@
 import 'package:alertsapp/Widgets/custome_row.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FiledList extends StatefulWidget {
   const FiledList({super.key});
@@ -41,30 +42,30 @@ class _FiledListState extends State<FiledList> {
                   title2: 'Shoppify',
                   buttonColor: Colors.purple,
                 ),
-                const SizedBox(
-                  height: 25,
+                SizedBox(
+                  height: 25.h,
                 ),
                 CustomRow(
                   title1: 'Web\nDevelopment',
                   title2: 'Application\nDevelopment',
                   buttonColor: Colors.purple,
                 ),
-                const SizedBox(
-                  height: 25,
+                SizedBox(
+                  height: 25.h,
                 ),
                 CustomRow(
                     title1: 'Graphics Design',
                     title2: 'Shoppify',
                     buttonColor: Colors.purple),
-                const SizedBox(
-                  height: 25,
+                SizedBox(
+                  height: 25.h,
                 ),
                 CustomRow(
                     title1: 'Wordpress',
                     title2: 'Shoppify',
                     buttonColor: Colors.purple),
-                const SizedBox(
-                  height: 25,
+                SizedBox(
+                  height: 25.h,
                 ),
                 CustomRow(
                     title1: 'Wordpress',
