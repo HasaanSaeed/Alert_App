@@ -2,37 +2,38 @@ import 'package:alertsapp/Widgets/custome_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class FiledList extends StatefulWidget {
-  const FiledList({super.key});
+class UpworkFieldList extends StatefulWidget {
+  const UpworkFieldList({super.key});
 
   @override
-  State<FiledList> createState() => _FiledListState();
+  State<UpworkFieldList> createState() => _UpworkFieldListState();
 }
 
-class _FiledListState extends State<FiledList> {
+class _UpworkFieldListState extends State<UpworkFieldList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
+            padding: EdgeInsets.symmetric(vertical: 30.h, horizontal: 20.w),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
+                Text(
                   'Choose According to your Skills',
                   style: TextStyle(
                       color: Colors.indigo,
-                      fontSize: 40,
+                      fontSize: 40.sp,
                       fontWeight: FontWeight.w800),
                 ),
                 const SizedBox(
                   height: 50,
                 ),
-                const Text(
+                Text(
                   'Field of Experties',
-                  style: TextStyle(fontSize: 36),
+                  style: TextStyle(fontSize: 36.sp),
                 ),
                 const SizedBox(
                   height: 50,
@@ -46,7 +47,7 @@ class _FiledListState extends State<FiledList> {
                   height: 25.h,
                 ),
                 CustomRow(
-                  title1: 'Web\nDevelopment',
+                  title1: 'Website\nDevelopment',
                   title2: 'Application\nDevelopment',
                   buttonColor: Colors.purple,
                 ),
@@ -54,7 +55,7 @@ class _FiledListState extends State<FiledList> {
                   height: 25.h,
                 ),
                 CustomRow(
-                    title1: 'Graphics Design',
+                    title1: 'Graphics\nDesigning',
                     title2: 'Shoppify',
                     buttonColor: Colors.purple),
                 SizedBox(
