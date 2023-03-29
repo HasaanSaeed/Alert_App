@@ -14,10 +14,12 @@ class SignIn extends StatefulWidget {
 
 // ignore: camel_case_types
 class _SignInState extends State<SignIn> {
+  
   final _formKey = GlobalKey<FormState>();
   final TextEditingController emailcontroller = TextEditingController();
   final TextEditingController passwordcontroller = TextEditingController();
   final _auth = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
     //--------------------------------Email

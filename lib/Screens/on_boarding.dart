@@ -1,6 +1,8 @@
 import 'package:alertsapp/Authentication/sign_in.dart';
+import 'package:alertsapp/Screens/home_screen.dart';
 import 'package:alertsapp/Widgets/custom_button.dart';
 import 'package:bulleted_list/bulleted_list.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,6 +14,10 @@ class OnBoarding extends StatefulWidget {
 }
 
 class _OnBoardingState extends State<OnBoarding> {
+  // final _auth = FirebaseAuth.instance;
+
+
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

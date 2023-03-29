@@ -1,6 +1,5 @@
 import 'package:alertsapp/Screens/home_screen.dart';
-import 'package:alertsapp/Screens/splash_screen.dart';
-import 'package:alertsapp/Screens/upwork_field_list%20.dart';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           theme: ThemeData(scaffoldBackgroundColor: Colors.white),
           debugShowCheckedModeBanner: false,
-          home: const SplashSreen(),
+          home: const HomeScreen(),
         );
       },
     );
