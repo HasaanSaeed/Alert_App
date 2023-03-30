@@ -1,14 +1,17 @@
 import 'package:alertsapp/Screens/home_screen.dart';
-
+import 'package:alertsapp/Screens/on_boarding.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -21,10 +24,18 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp(
+        return GetMaterialApp(
           theme: ThemeData(scaffoldBackgroundColor: Colors.white),
           debugShowCheckedModeBanner: false,
-          home: const HomeScreen(),
+          home: StreamBuilder(
+      stream: FirebaseAuth.instance.authStateChanges(),
+      builder: (c, userSnapshot) {
+        if (userSnapshot.hasData) {
+          return const HomeScreen();
+        }
+        return const OnBoarding();
+      },
+    ),
         );
       },
     );

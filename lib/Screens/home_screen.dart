@@ -63,10 +63,11 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Container(
           height: double.infinity,
           decoration: const BoxDecoration(
-            gradient: LinearGradient(
-                colors: [Colors.blueAccent, Colors.white10],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter),
+            gradient: LinearGradient(colors: [
+              Colors.blueAccent,
+              Colors.white70,
+              Colors.indigoAccent,
+            ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
           ),
           child: SingleChildScrollView(
             child: Padding(
