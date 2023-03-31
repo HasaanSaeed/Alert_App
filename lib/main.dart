@@ -5,13 +5,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-
+  
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -27,15 +26,16 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           theme: ThemeData(scaffoldBackgroundColor: Colors.white),
           debugShowCheckedModeBanner: false,
-          home: StreamBuilder(
-      stream: FirebaseAuth.instance.authStateChanges(),
-      builder: (c, userSnapshot) {
-        if (userSnapshot.hasData) {
-          return const HomeScreen();
-        }
-        return const OnBoarding();
-      },
-    ),
+          home: const HomeScreen(),
+          // StreamBuilder(
+          //   stream: FirebaseAuth.instance.authStateChanges(),
+          //   builder: (c, userSnapshot) {
+          //     if (userSnapshot.hasData) {
+          //       return const HomeScreen();
+          //     }
+          //     return const OnBoarding();
+          //   },
+          // ),
         );
       },
     );

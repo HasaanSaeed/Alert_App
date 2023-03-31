@@ -1,7 +1,3 @@
-// ignore_for_file: prefer_const_constructors_in_immutables
-
-import 'package:alertsapp/Screens/fiver_field_list.dart';
-import 'package:alertsapp/Screens/upwork_field_list%20.dart';
 import 'package:flutter/material.dart';
 
 class CustomRow extends StatelessWidget {
@@ -11,7 +7,7 @@ class CustomRow extends StatelessWidget {
   // final VoidCallback onPressed1;
   // final VoidCallback onPressed2;
 
-  CustomRow({
+  const CustomRow({
     super.key,
     required this.title1,
     required this.title2,
@@ -36,14 +32,7 @@ class CustomRow extends StatelessWidget {
             ),
           ),
           // onPressed: onPressed1,
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const FiverFieldList(),
-              ),
-            );
-          },
+          onPressed: () {},
           child: Text(
             title1,
             overflow: TextOverflow.visible,
@@ -60,14 +49,7 @@ class CustomRow extends StatelessWidget {
               ),
             ),
           ),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const UpworkFieldList(),
-              ),
-            );
-          },
+          onPressed: () {},
           child: Text(
             title2,
             overflow: TextOverflow.visible,

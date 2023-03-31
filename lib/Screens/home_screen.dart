@@ -1,5 +1,7 @@
+import 'package:alertsapp/Screens/fiver_field_list.dart';
+import 'package:alertsapp/Screens/profile_page.dart';
 import 'package:alertsapp/Screens/settings.dart';
-import 'package:alertsapp/Widgets/custome_row.dart';
+import 'package:alertsapp/Screens/upwork_field_list%20.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -52,12 +54,36 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             onPressed: () {
               // do something when the icon is clicked
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProfilePage()),
+              );
             },
           ),
           const SizedBox(
             width: 10,
           ),
         ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+        ],
+        currentIndex: 0,
+        onTap: (index) {
+          // Handle navigation when a tab is tapped.
+        },
       ),
       body: SafeArea(
         child: Container(
@@ -89,11 +115,87 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(
                     height: 40.h,
                   ),
-                  CustomRow(
-                    title1: 'Fiver',
-                    title2: 'Upwork',
-                    buttonColor: Colors.purple,
-                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          // Do something when the first widget is tapped.
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const FiverFieldList(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          height: 50.h,
+                          width: 150.w,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                            color: Colors.lightBlueAccent,
+                            border: Border.all(
+                              color: Colors.transparent,
+                            ),
+                          ),
+                          child: Row(
+                            // mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Icon(
+                                Icons.star,
+                                size: 36,
+                                color: Colors.white,
+                              ),
+                              SizedBox(width: 10.0),
+                              Text(
+                                'Fiver',
+                                style: TextStyle(
+                                    fontSize: 30, color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          // Do something when the first widget is tapped.
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const UpworkFieldList(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          height: 50.h,
+                          width: 150.w,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                            color: Colors.lightBlueAccent,
+                            border: Border.all(
+                              color: Colors.transparent,
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Icon(
+                                Icons.star,
+                                size: 36,
+                                color: Colors.white,
+                              ),
+                              SizedBox(width: 10.0),
+                              Text(
+                                'UpWork',
+                                style: TextStyle(
+                                    fontSize: 30, color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),
