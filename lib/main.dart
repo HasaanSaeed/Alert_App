@@ -1,11 +1,9 @@
-import 'package:alertsapp/Screens/home_screen.dart';
-import 'package:alertsapp/Screens/on_boarding.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:alertsapp/Screens/settings.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-  
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -26,7 +24,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           theme: ThemeData(scaffoldBackgroundColor: Colors.white),
           debugShowCheckedModeBanner: false,
-          home: const HomeScreen(),
+          home: const SettingsPage(),
           // StreamBuilder(
           //   stream: FirebaseAuth.instance.authStateChanges(),
           //   builder: (c, userSnapshot) {

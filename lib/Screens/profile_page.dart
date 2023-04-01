@@ -91,7 +91,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
-            TextField(),
+            const TextField(),
           ],
         ),
       ),

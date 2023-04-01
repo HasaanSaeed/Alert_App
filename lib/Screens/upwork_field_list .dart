@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:alertsapp/Widgets/custome_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -38,7 +40,7 @@ class _UpworkFieldListState extends State<UpworkFieldList> {
                 const SizedBox(
                   height: 50,
                 ),
-                CustomRow(
+                const CustomRow(
                   title1: 'Wordpress',
                   title2: 'Shoppify',
                   buttonColor: Colors.purple,
@@ -46,7 +48,7 @@ class _UpworkFieldListState extends State<UpworkFieldList> {
                 SizedBox(
                   height: 25.h,
                 ),
-                CustomRow(
+                const CustomRow(
                   title1: 'Website\nDevelopment',
                   title2: 'Application\nDevelopment',
                   buttonColor: Colors.purple,
@@ -54,21 +56,21 @@ class _UpworkFieldListState extends State<UpworkFieldList> {
                 SizedBox(
                   height: 25.h,
                 ),
-                CustomRow(
+                const CustomRow(
                     title1: 'Graphics\nDesigning',
                     title2: 'Shoppify',
                     buttonColor: Colors.purple),
                 SizedBox(
                   height: 25.h,
                 ),
-                CustomRow(
+                const CustomRow(
                     title1: 'Wordpress',
                     title2: 'Shoppify',
                     buttonColor: Colors.purple),
                 SizedBox(
                   height: 25.h,
                 ),
-                CustomRow(
+                const CustomRow(
                     title1: 'Wordpress',
                     title2: 'Shoppify',
                     buttonColor: Colors.purple),

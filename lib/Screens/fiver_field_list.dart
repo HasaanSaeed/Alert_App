@@ -37,7 +37,7 @@ class _FiverFieldListState extends State<FiverFieldList> {
                 const SizedBox(
                   height: 50,
                 ),
-                CustomRow(
+                const CustomRow(
                   title1: 'Wordpress',
                   title2: 'Shoppify',
                   buttonColor: Colors.purple,
@@ -45,7 +45,7 @@ class _FiverFieldListState extends State<FiverFieldList> {
                 SizedBox(
                   height: 25.h,
                 ),
-                CustomRow(
+                const CustomRow(
                   title1: 'Web\nDevelopment',
                   title2: 'Application\nDevelopment',
                   buttonColor: Colors.purple,
@@ -53,21 +53,21 @@ class _FiverFieldListState extends State<FiverFieldList> {
                 SizedBox(
                   height: 25.h,
                 ),
-                CustomRow(
+                const CustomRow(
                     title1: 'Graphics\nDesigning',
                     title2: 'Video Editing',
                     buttonColor: Colors.purple),
                 SizedBox(
                   height: 25.h,
                 ),
-                CustomRow(
+                const CustomRow(
                     title1: 'Wordpress',
                     title2: 'Shoppify',
                     buttonColor: Colors.purple),
                 SizedBox(
                   height: 25.h,
                 ),
-                CustomRow(
+                const CustomRow(
                     title1: 'Wordpress',
                     title2: 'Shoppify',
                     buttonColor: Colors.purple),

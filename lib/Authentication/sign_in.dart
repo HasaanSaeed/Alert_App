@@ -191,6 +191,7 @@ class _SignInState extends State<SignIn> {
             },
           )
           .catchError(
+        // ignore: body_might_complete_normally_catch_error
         (e) {
           Fluttertoast.showToast(msg: e!.message);
         },

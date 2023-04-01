@@ -1,10 +1,8 @@
-import 'dart:async';
 import 'package:alertsapp/Screens/home_screen.dart';
 import 'package:alertsapp/Screens/on_boarding.dart';
 import 'package:alertsapp/Services/splash_services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class SplashSreen extends StatefulWidget {
   const SplashSreen({Key? key}) : super(key: key);
