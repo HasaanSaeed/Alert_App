@@ -38,10 +38,10 @@ dependencies:
   cupertino_icons: ^1.0.5
   bulleted_list: ^0.0.1+0.1a
   get: ^4.6.5
-  firebase_auth: ^4.3.0
+  firebase_auth: ^4.4.0
   fluttertoast : ^8.2.1
-  cloud_firestore: ^4.4.5
-  firebase_core: ^2.8.0
+  cloud_firestore: ^4.5.0
+  firebase_core: ^2.9.0
   flutter_screenutil: ^5.7.0
   flutter_native_splash: ^2.2.19
   image_picker: ^0.8.7+1

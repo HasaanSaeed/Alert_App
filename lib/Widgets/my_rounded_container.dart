@@ -14,8 +14,10 @@ class MyRoundedContainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            title,
-            style: const TextStyle(fontSize: 24),
+            title.toUpperCase(),
+            style: const TextStyle(
+              fontSize: 24,
+            ),
           ),
           const SizedBox(
             height: 10,
