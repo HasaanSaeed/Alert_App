@@ -1,4 +1,4 @@
-import 'package:alertsapp/Screens/settings.dart';
+import 'package:alertsapp/Screens/profile_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           theme: ThemeData(scaffoldBackgroundColor: Colors.white),
           debugShowCheckedModeBanner: false,
-          home: const SettingsPage(),
+          home: const ProfilePage(),
           // StreamBuilder(
           //   stream: FirebaseAuth.instance.authStateChanges(),
           //   builder: (c, userSnapshot) {

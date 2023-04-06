@@ -45,6 +45,10 @@ dependencies:
   flutter_screenutil: ^5.7.0
   flutter_native_splash: ^2.2.19
   image_picker: ^0.8.7+1
+  image_cropper: ^3.0.2
+  firebase_storage: ^11.1.0
+  intl_phone_field: ^3.1.0
+  country_picker: ^2.0.20
   # animated_text_kit: ^4.2.2
   
 dev_dependencies:

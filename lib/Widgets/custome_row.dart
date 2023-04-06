@@ -4,16 +4,16 @@ class CustomRow extends StatelessWidget {
   final String title1;
   final String title2;
   final Color buttonColor;
-  // final VoidCallback onPressed1;
-  // final VoidCallback onPressed2;
+  final VoidCallback onPressed1;
+  final VoidCallback onPressed2;
 
   const CustomRow({
     super.key,
     required this.title1,
     required this.title2,
     required this.buttonColor,
-    // required this.onPressed1,
-    // required this.onPressed2,
+    required this.onPressed1,
+    required this.onPressed2,
   });
 
   @override
@@ -31,8 +31,7 @@ class CustomRow extends StatelessWidget {
               ),
             ),
           ),
-          // onPressed: onPressed1,
-          onPressed: () {},
+          onPressed: onPressed1,
           child: Text(
             title1,
             overflow: TextOverflow.visible,
@@ -49,7 +48,7 @@ class CustomRow extends StatelessWidget {
               ),
             ),
           ),
-          onPressed: () {},
+          onPressed: onPressed2,
           child: Text(
             title2,
             overflow: TextOverflow.visible,

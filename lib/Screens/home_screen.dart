@@ -2,6 +2,7 @@ import 'package:alertsapp/Screens/fiver_field_list.dart';
 import 'package:alertsapp/Screens/profile_page.dart';
 import 'package:alertsapp/Screens/settings.dart';
 import 'package:alertsapp/Screens/upwork_field_list%20.dart';
+import 'package:alertsapp/Widgets/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,7 +13,13 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // List<Color> colors = [const Color(0xFFFB9245), const Color(0xFFF54E6B)];
+  int _currentIndex = 0;
+
+  void _onTap(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -65,33 +72,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Alerts',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.summarize),
-            label: 'Job',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.document_scanner),
-            label: 'Proposals',
-          ),
-        ],
-        currentIndex: 0,
-        onTap: (index) {
-          // Handle navigation when a tab is tapped.
-        },
+      bottomNavigationBar: CustomBottomNavigationBar(
+        currentIndex: _currentIndex,
+        onTap: _onTap,
       ),
       body: SafeArea(
         child: Container(
