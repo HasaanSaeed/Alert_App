@@ -1,20 +1,18 @@
 import 'package:alertsapp/Services/copytext.dart';
-import 'package:alertsapp/Widgets/Custom_Button.dart';
 
 import 'package:alertsapp/Widgets/custome_row.dart';
-import 'package:alertsapp/Wordpress%20Proposals/1.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Wordpress extends StatefulWidget {
-  const Wordpress({super.key});
+class Wordpress3 extends StatefulWidget {
+  const Wordpress3({super.key});
 
   @override
-  State<Wordpress> createState() => _WordpressState();
+  State<Wordpress3> createState() => _Wordpress3State();
 }
 
-class _WordpressState extends State<Wordpress> {
+class _Wordpress3State extends State<Wordpress3> {
   final GlobalKey<CopyableTextState> _copyableTextKey = GlobalKey();
 
   void _onCopyPressed() {
@@ -50,16 +48,16 @@ class _WordpressState extends State<Wordpress> {
                 '''
           Dear [Client],
               
-          I am writing to offer my services as a WordPress developer for your website. I have recently completed a WordPress development course and am excited to apply my skills to real-world projects.
-          As a fresh WordPress developer, I have experience in:
+          I am writing to offer my services as a Wordpress3 developer for your website. I have recently completed a Wordpress3 development course and am excited to apply my skills to real-world projects.
+          As a fresh Wordpress3 developer, I have experience in:
               
-          * Developing custom WordPress themes and plugins
-          * Setting up and configuring WordPress sites
-          * Implementing WordPress best practices for security and performance
-          * Troubleshooting WordPress issues and performing updates
-          I have also worked with HTML, CSS, JavaScript, and PHP, which are essential skills for WordPress development. I have experience with popular WordPress page builders and theme frameworks, and I am familiar with version control systems such as Git and GitHub.
+          * Developing custom Wordpress3 themes and plugins
+          * Setting up and configuring Wordpress3 sites
+          * Implementing Wordpress3 best practices for security and performance
+          * Troubleshooting Wordpress3 issues and performing updates
+          I have also worked with HTML, CSS, JavaScript, and PHP, which are essential skills for Wordpress3 development. I have experience with popular Wordpress3 page builders and theme frameworks, and I am familiar with version control systems such as Git and GitHub.
               
-          I understand that you may be hesitant to work with a fresh WordPress developer. However, I am committed to delivering high-quality work that meets your requirements and exceeds your expectations. I am eager to learn and grow as a WordPress developer, and I am confident that my skills and work ethic will be an asset to your project.
+          I understand that you may be hesitant to work with a fresh Wordpress3 developer. However, I am committed to delivering high-quality work that meets your requirements and exceeds your expectations. I am eager to learn and grow as a Wordpress3 developer, and I am confident that my skills and work ethic will be an asset to your project.
               
           If you are interested in working with me, please reply to this email, and we can discuss your project requirements and how I can help you achieve your goals.
               
@@ -73,17 +71,6 @@ class _WordpressState extends State<Wordpress> {
                 style: TextStyle(fontSize: 14.sp),
                 key: _copyableTextKey,
               ),
-              SizedBox(
-                height: 20,
-              ),
-              CustomButton(name: 'Next', onPressed: () {
-                Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (_) => const Wordpress2(),
-                                ),
-                              );
-              })
             ],
           ),
         ),
