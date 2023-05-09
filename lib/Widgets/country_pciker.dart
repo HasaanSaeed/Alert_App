@@ -32,7 +32,7 @@ class _CountryCodePickerWidgetState extends State<CountryCodePickerWidget> {
                           borderRadius:
                               BorderRadius.only(topLeft: Radius.circular(10)),
                           inputDecoration: InputDecoration(
-                            hintText: 'Start typing to sear',
+                            hintText: 'Start typing to search',
                             labelText: 'Search ',
                           )),
                       favorite: ['PK'],

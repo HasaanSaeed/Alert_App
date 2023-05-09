@@ -1,4 +1,4 @@
-import 'package:alertsapp/Fields%20pages/wordpress.dart';
+import 'package:alertsapp/Screens/on_boarding.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           theme: ThemeData(scaffoldBackgroundColor: Colors.white),
           debugShowCheckedModeBanner: false,
-          home: const Wordpress(),
+          home: const OnBoarding(),
           // StreamBuilder(
           //   stream: FirebaseAuth.instance.authStateChanges(),
           //   builder: (c, userSnapshot) {
