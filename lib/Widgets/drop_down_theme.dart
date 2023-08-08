@@ -5,13 +5,13 @@ enum ThemeModeOption { light, dark, system }
 class MyThemeSelector extends StatefulWidget {
   final ValueChanged<ThemeModeOption> onThemeModeChanged;
 
-  MyThemeSelector({required this.onThemeModeChanged});
+  const MyThemeSelector({super.key, required this.onThemeModeChanged});
 
   @override
-  _MyThemeSelectorState createState() => _MyThemeSelectorState();
+  MyThemeSelectorState createState() => MyThemeSelectorState();
 }
 
-class _MyThemeSelectorState extends State<MyThemeSelector> {
+class MyThemeSelectorState extends State<MyThemeSelector> {
   ThemeModeOption _selectedOption = ThemeModeOption.system;
 
   @override

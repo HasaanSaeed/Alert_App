@@ -2,7 +2,7 @@ import 'package:alertsapp/Services/copytext.dart';
 import 'package:alertsapp/Widgets/Custom_Button.dart';
 
 import 'package:alertsapp/Widgets/custome_row.dart';
-import 'package:alertsapp/Wordpress%20Proposals/1.dart';
+import 'package:alertsapp/Wordpress%20Proposals/one.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -73,7 +73,7 @@ class _WordpressState extends State<Wordpress> {
                 style: TextStyle(fontSize: 14.sp),
                 key: _copyableTextKey,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               CustomButton(name: 'Next', onPressed: () {

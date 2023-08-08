@@ -129,9 +129,9 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Colors.transparent,
                             ),
                           ),
-                          child: Row(
+                          child: const Row(
                             // mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
+                            children: [
                               Icon(
                                 Icons.star,
                                 size: 36,
@@ -167,9 +167,9 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Colors.transparent,
                             ),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
+                            children: [
                               Icon(
                                 Icons.star,
                                 size: 36,

@@ -28,8 +28,8 @@ class _OnBoardingState extends State<OnBoarding> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                Column(
-                  children: const [
+                const Column(
+                  children: [
                     Image(
                       image: NetworkImage(
                           'https://img.freepik.com/free-vector/welcome-word-flat-cartoon-people-characters_81522-4207.jpg?w=826&t=st=1678787998~exp=1678788598~hmac=02cc542101122cdaef785d81d8b9c10f9746cdfb07a25b13461cdbce195c095c'),
